@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="10dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:id="@+id/profile_search"
+        android:src="@drawable/ic_baseline_person_24"
+        />
+
+    <TextView
+        android:id="@+id/username_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/profile_search"
+        android:layout_marginStart="15dp"
+        android:layout_toEndOf="@id/profile_search"
+        android:gravity="center"
+        android:text="username"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/img_online"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignEnd="@+id/profile_search"
+        android:layout_alignBottom="@+id/profile_search"
+        android:background="@drawable/status_bgr" />
+
+    <TextView
+        android:id="@+id/last_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/username_search"
+        android:layout_alignStart="@+id/username_search"
+        android:layout_alignBottom="@+id/profile_search"
+        android:layout_marginBottom="3dp"
+        android:gravity="center"
+        android:text="username"
+        android:textSize="15sp"
+        android:maxLines="1"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/img_onffline"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignEnd="@+id/profile_search"
+        android:layout_alignBottom="@+id/profile_search"
+        android:background="@drawable/status_bgr" />
+
+
+
+
+</RelativeLayout>
